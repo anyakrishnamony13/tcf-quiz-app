@@ -7,12 +7,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Quiz App</title>
     <style>
+        
         body {
             font-family: Hind, sans-serif;
             text-align: center;
             margin: 50px;
             background-color: #DDD8CF;
         }
+        .header{
+            display: flex;
+            flex-direction: row;
+        }
+
         .flashcard {
             color: #585752;
             width: 630px;
@@ -26,6 +32,7 @@
             border-radius: 10px;
             background-color: #F3F1EA;
             cursor: pointer;
+            box-shadow: 10px 10px 5px 2px;
         }
         h2.question {
             font-size: 30px;
@@ -43,13 +50,24 @@
             background-color: #FAF9F6;
             cursor: pointer;
         }
+        .answer-box:hover {
+            display: flex;
+            align-items: left;
+            justify-content: left;
+            width: 400px;
+            padding: 12px;
+            padding-inline-end: 40px;
+            margin: 10px;
+            border: 1px solid #C6C5C1;
+            border-radius: 5px;
+            background-color: #faf9f6b9;
+            cursor: pointer;
+        }
         .answer-box input[type="radio"] {
             display: none;
         }
         .profile-pic-button {
-            position: absolute;
-            top: 10px;
-            right: 10px;
+            position: relative;
             padding: 10px 15px;
             background-color: #442B12;
             color: white;
@@ -111,7 +129,11 @@
     </style>
 </head>
 <body>
-    <h1>Quiz App</h1>
+    <div class="header">
+        <h1>Quiz App</h1>
+        <button class="profile-pic-button"> Profile Pic </button>
+    </div>
+    
     <div class="flashcard">
         <h2 class="question">
             Question goes here
@@ -129,7 +151,7 @@
     
     
     </div>
-    <button class="profile-pic-button"> Profile Pic </button>
+    
 
     <button class="prev-btn">
         <ion-icon name="chevron-back-outline"></ion-icon> </button>
