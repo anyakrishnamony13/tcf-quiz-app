@@ -11,18 +11,40 @@
             font-family: Hind, sans-serif;
             text-align: center;
             margin: 50px;
+            background-color: #DDD8CF;
         }
         .flashcard {
+            color: #585752;
             width: 630px;
             height: 560px;
             margin: auto;
             display: flex;
             align-items: center;
             justify-content: center;
-            border: 2px solid #333;
+            flex-direction: column;
+            border: 4px solid #C3C2BD;
             border-radius: 10px;
-            background-color: #f8f8f8;
+            background-color: #F3F1EA;
             cursor: pointer;
+        }
+        h2.question {
+            font-size: 30px;
+        }
+        .answer-box {
+            display: flex;
+            align-items: left;
+            justify-content: left;
+            width: 400px;
+            padding: 12px;
+            padding-inline-end: 40px;
+            margin: 10px;
+            border: 1px solid #C6C5C1;
+            border-radius: 5px;
+            background-color: #FAF9F6;
+            cursor: pointer;
+        }
+        .answer-box input[type="radio"] {
+            display: none;
         }
         .profile-pic-button {
             position: absolute;
@@ -90,7 +112,27 @@
 </head>
 <body>
     <h1>Quiz App</h1>
+<<<<<<< HEAD
     <div class="flashcard">Click to see answer</div>
+=======
+    <div class="flashcard">
+        <h2 class="question">
+            Question goes here
+        </h2> 
+
+        <form>
+            
+            <label class="answer-box"><input type="radio" name="answer"> Answer 1</label>
+            <label class="answer-box"><input type="radio" name="answer"> Answer 2</label>
+            <label class="answer-box"><input type="radio" name="answer"> Answer 3</label>
+            <label class="answer-box"><input type="radio" name="answer"> Answer 4</label>
+
+
+        </form>
+    
+    
+    </div>
+>>>>>>> 8792e55d337c5679efaadc5067a9fc83c90e2861
     <button class="profile-pic-button"> Profile Pic </button>
 
     <button class="prev-btn">
@@ -101,3 +143,4 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
+
