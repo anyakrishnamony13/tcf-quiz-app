@@ -26,7 +26,38 @@
             font-size: 40px;
             font-family: Inter, sans-serif;
         }
+        .score-counter {
+            background-color: #585752;
+            color: white;
+            font-size: 17px;
+            padding: 5px 10px;
+            border-radius: 3px;
+            width: 11%;
+            margin: 0 auto;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
 
+        .progress-container {
+            width: 50%;
+            background-color: #C6C5C1;
+            border-radius: 10px;
+            margin: 20px auto;
+            height: 20px;
+            overflow: hidden;
+        }
+        .progress-bar {
+            height: 100%;
+            width: 30%;
+            background-color: #778275;
+            border-radius: 10px;
+            transition: width 0.5s ease-in-out;
+        }
+        .progress-text {
+            margin-top: 5px;
+            font-size: 18px;
+        }
         .flashcard {
             color: #585752;
             width: 630px;
@@ -162,6 +193,22 @@
             right: 350px;
             bottom: 50px;
         }
+        .exit-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #585752;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .exit-btn:hover {
+            background-color: #75746c;
+        }
         .
     </style>
 </head>
@@ -171,8 +218,12 @@
         <button class="profile-pic-button"> 
             <i class="fa-solid fa-user"></i>
         </button>
+        <button class="exit-btn">Exit
+            </button>
     </div>
-    
+
+
+
     <div class="flashcard">
         <h2 class="question">
             Question goes here
@@ -191,7 +242,7 @@
     
     
     </div>
-    
+
     
 
     <button class="prev-btn">
@@ -201,6 +252,16 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://kit.fontawesome.com/a55bb1f865.js" crossorigin="anonymous"></script>
+
+    <div class="score-counter">
+        Score: <span id="score"> 0</span>
+    </div>
+
+    <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+    </div>
+    <div class="progress-text">Progress: <span id="progress-text">3 / 10</span></div>
+
 </body>
 </html>
 
