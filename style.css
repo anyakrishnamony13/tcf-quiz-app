@@ -1,0 +1,160 @@
+body {
+    font-family: Hind, sans-serif;
+    text-align: center;
+    margin: 50px;
+    background-color: #DDD8CF;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    position: relative;
+    width: 100%;
+}
+h1 {
+    color: #585752;
+    font-size: 40px;
+    font-family: Inter, sans-serif;
+}
+.score-counter {
+    background-color: #585752;
+    color: white;
+    font-size: 17px;
+    padding: 5px;
+    border-radius: 3px;
+    width: 10%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.progress-container {
+    width: 50%;
+    background-color: #C6C5C1;
+    border-radius: 10px;
+    margin: 20px auto;
+    height: 20px;
+    overflow: hidden;
+}
+.progress-bar {
+    height: 100%;
+    width: 30%;
+    background-color: #778275;
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+}
+.progress-text {
+    margin-top: 5px;
+    font-size: 18px;
+}
+.flashcard {
+    color: #585752;
+    width: 630px;
+    height: 560px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 4px solid #C3C2BD;
+    border-radius: 10px;
+    background-color: #F3F1EA;
+    box-shadow: 10px 10px 5px 2px;
+}
+h2.question {
+    font-size: 30px;
+}
+.answer-box {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    width: 400px;
+    padding: 12px;
+    padding-inline-end: 40px;
+    margin: 10px;
+    border: 1px solid #C6C5C1;
+    border-radius: 5px;
+    background-color: #FAF9F6;
+    cursor: pointer;
+}
+.answer-box:hover {
+    background-color: #faf9f6b9;
+    border: 1px solid #9c9b97;
+}
+.answer-box input[type="radio"] {
+    display: none;
+}
+.submit-btn {
+    align-items: center;
+    align-self: center;
+    font-size: medium;
+    color: #faf9f6b9;
+    background-color: #585752;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid #C6C5C1;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.submit-btn:hover {
+    background-color: #86847c;
+}
+.profile-pic-button {
+    position: absolute;
+    right: 20px;
+    padding: 20px 20px; 
+    font-size: 25px; 
+    background-color: #585752;
+    color: #faf9f6b9;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 60px; 
+    height: 60px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile-pic-button:hover {
+    background-color: #585752ae;
+}
+.next-btn, .prev-btn {
+    background-color: #B3C4AF;
+    border: 2px solid #778275;
+    color: #778275;
+    width: 80px; 
+    height: 80px; 
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 30px;
+    position: relative;
+    bottom: 50px;
+}
+.next-btn {
+    left: 350px;
+}
+.prev-btn {
+    right: 350px;
+}
+.next-btn:hover, .prev-btn:hover {
+    background-color: #9AAB97;
+}
+.exit-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #585752;
+    color: #faf9f6b9;
+    padding: 20px 20px;
+    width: 60px; 
+    height: 60px; 
+    font-size: 25px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+}
+.exit-btn:hover {
+    background-color: #75746c;
+}
