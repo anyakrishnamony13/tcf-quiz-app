@@ -165,7 +165,6 @@ h2.question {
     border: 2px solid #778275;
     color: #778275;
 }
-<<<<<<< HEAD:question_display.css
 .next-btn:hover
 {
     background-color: #9AAB97;
@@ -178,9 +177,7 @@ h2.question {
     right: 350px;
     bottom: 50px;
 }
-=======
 
->>>>>>> 8a3845c102208cc347494a776997b5632a05f0f9:frontend/question_display.css
 .exit-btn {
     position: absolute;
     top: 20px;
