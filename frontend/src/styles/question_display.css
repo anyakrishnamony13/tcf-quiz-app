@@ -21,6 +21,20 @@ h1 {
     color: #585752;
     font-size: 32px;
 }
+.exit-btn, .profile-pic-button {
+    background-color: #3c2a07;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.exit-btn:hover, .profile-pic-button:hover {
+    background-color: #3c2a079c;
+    transform: scale(1.1);
+}
 .score-counter {
     background-color: #585752;
     color: white;
@@ -63,6 +77,21 @@ h1 {
     background-color: #e0ddd8;
     transform: scale(1.05);
 }
+.check-answer-btn {
+    background-color: #B3C4AF;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+.check-answer-btn:hover {
+    background-color: #9AAB97;
+    transform: scale(1.05);
+}
 .nav-buttons {
     display: flex;
     justify-content: space-between;
@@ -87,6 +116,23 @@ h1 {
 .prev-btn:hover, .next-btn:hover {
     background-color: #9AAB97;
 }
+.progress-bar-container {
+    width: 100%;
+    max-width: 400px;
+    height: 20px; /* Increased height */
+    background-color: #e0ddd8;
+    border-radius: 10px; /* Rounded corners for the container */
+    margin-top: 20px;
+    border: 1px solid #585752; /* Outline around the container */
+}
+.progress-bar {
+    width: 60%; /* Simulated progress */
+    height: 100%;
+    background-color: #B3C4AF;
+    border-radius: 10px;
+    
+}
+
 @media (max-width: 600px) {
     .flashcard {
         width: 90%;
