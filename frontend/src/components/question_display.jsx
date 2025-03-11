@@ -1,18 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./question_display.css";
 
 function Flashcard() {
     const [selectedAnswer, setSelectedAnswer] = useState(null);
+    /*stores the selected radio button value & updates the state when a user selects an answer*/
 
     function handleAnswerChange(event) {
         setSelectedAnswer(event.target.value);
     }
+    /* Updates selectedAnswer when a user selects a different multiple choice option*/
 
     function handleSubmit(event) {
         event.preventDefault();
         alert(`You selected: ${selectedAnswer}`);
     }
-
+    /*stops the default form submission (refresh) so we can handle submission ourselves and displays alert with the selected answer*/
+    /* alert is temporary until we decide what to do with the selected answer */
 return (
     <div className="flashcard-container">
       <div className="flashcard">
@@ -29,6 +32,7 @@ return (
               />
               {answer}
             </label>
+            /*creates form with multiple choice options that update selectedAnswer when clicked*/
           ))}
           <button type="submit" className="submit-btn">
             Check Answer
@@ -44,3 +48,4 @@ return (
 }
 
 export default Flashcard;
+/* exports component so it can be used in the app */

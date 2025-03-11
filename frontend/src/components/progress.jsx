@@ -1,4 +1,5 @@
 import React from "react";
+import "./progress_bar.css";
 
 export default function Progress(props) {
     const { currentProgress, totalProgress } = props;
